@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Student Survey</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Student Survey Form</h1>
+    <p id="description">Thank you for taking the time to take our survey</p>
+    <form id="survey-form">
+      <label id="name-label"
+        >Name
+        <input id="name" type="text" placeholder="Enter Your name" required />
+      </label>
+      <label id="email-label"
+        >Email
+        <input
+          id="email"
+          type="email"
+          placeholder="Enter Your Email"
+          required
+        />
+      </label>
+      <label id="number-label"
+        >Age(optional)
+        <input
+          id="number"
+          type="number"
+          min="13"
+          max="120"
+          placeholder="Age"
+        /><br />
+      </label>
+      <label
+        >What option best describes your current status as a student?
+        <select id="dropdown">
+          <option value="">Select Current Student Status</option>
+          <option value="1">Full-Time Student</option>
+          <option value="2">Part-Time Student</option>
+          <option value="3">Full-Time Student who works</option>
+          <option value="4">Part-Time Student who works</option>
+          <option value="5">Other</option>
+        </select> </label
+      ><br />
+      <label
+        >Would you recommend higher education to others?<br />
+        <input class="choice" type="radio" name="refer" value="yes" />Yes
+      </label>
+      <label>
+        <input class="choice" type="radio" name="refer" value="maybe" />Maybe
+      </label>
+      <label>
+        <input class="choice" type="radio" name="refer" value="no" />No
+      </label>
+      <label
+        >What is your favorite part of school?
+        <select>
+          <option value="">Select an option</option>
+          <option value="6">Learning new things</option>
+          <option value="7">Projects</option>
+          <option value="8">Networking with others</option>
+          <option value="9">Getting that diploma baby</option>
+        </select> </label
+      ><br />
+      <label
+        >What would you like to see improved?<br />(Check all that apply)<br /><br />
+        <input class="choice" type="checkbox" value="10" />Professors
+      </label>
+      <label>
+        <input class="choice" type="checkbox" value="11" />Content Taught
+      </label>
+      <label>
+        <input class="choice" type="checkbox" value="12" />Parking
+      </label>
+      <label>
+        <input class="choice" type="checkbox" value="13" />Campus cleanliness
+      </label>
+      <label>
+        <input class="choice" type="checkbox" value="14" />Networking resources
+      </label>
+      <label>
+        <input class="choice" type="checkbox" value="15" />Tuition Affordability
+      </label>
+      <label>
+        <input class="choice" type="checkbox" value="16" />On Campus Housing
+      </label>
+      <label>
+        <input class="choice" type="checkbox" value="17" />Student Life
+      </label>
+      <label
+        >Any Comments or Suggestions?
+        <textarea
+          name="suggestions"
+          rows="5"
+          cols="30"
+          placeholder="I love this survey"
+        ></textarea>
+      </label>
+      <input id="submit" type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
